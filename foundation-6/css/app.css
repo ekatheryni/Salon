@@ -225,3 +225,11 @@
     text-align: center;
     padding-top: 10px;
 }
+
+.contacts{
+    width: 100%;
+    height: content-box;
+    background: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+}
