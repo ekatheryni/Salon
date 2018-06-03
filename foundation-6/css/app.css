@@ -1,7 +1,10 @@
-
 .topbar-responsive {
     background: #000200;
     padding: 1rem 1.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+    opacity: 0.8;
 }
 
 .topbar-responsive .topbar-responsive-logo {
@@ -20,6 +23,10 @@
 .topbar-responsive .menu a {
     color: #fefefe;
     transition: color 0.15s ease-in;
+    line-height: 1;
+    text-decoration: none;
+    display: block;
+    padding: 0.7rem 1rem;
 }
 
 .topbar-responsive .menu a:hover {
@@ -42,6 +49,61 @@
 .topbar-responsive .menu .topbar-responsive-button:hover {
     color: #a2adb4;
     border-color: #a2adb4;
+}
+
+.menu-hover-lines {
+    padding: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.35s ease;
+}
+
+.menu-hover-lines li a {
+    padding: 0.75rem 0;
+    color: rgba(230, 230, 230, 0.5);
+    position: relative;
+}
+
+.menu-hover-lines li:first-child a {
+    margin-left: 0;
+}
+
+.menu-hover-lines li.active > a {
+    background-color: transparent;
+}
+
+.menu-hover-lines a:before,
+.menu-hover-lines a::after {
+    height: 3px;
+    position: absolute;
+    content: '';
+    transition: all 0.35s ease;
+    background-color: #a6001c;
+    width: 0;
+}
+
+.menu-hover-lines a::before {
+    top: 0;
+    left: 0;
+}
+
+.menu-hover-lines a::after {
+    bottom: 0;
+    right: 0;
+}
+
+.menu-hover-lines a:hover,
+.menu-hover-lines li.active > a {
+    color: #ffffff;
+    transition: all 0.35s ease;
+}
+
+.menu-hover-lines a:hover::before,
+.menu-hover-lines .active a::before,
+.menu-hover-lines a:hover::after,
+.menu-hover-lines .active a::after {
+    width: 100%;
 }
 
 @media screen and (max-width: 39.9375em) {
