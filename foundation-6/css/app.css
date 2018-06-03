@@ -7,6 +7,10 @@
     opacity: 0.8;
 }
 
+.menu.simple li + li{
+    margin-left: 0!important;
+}
+
 .topbar-responsive .topbar-responsive-logo {
     color: #fefefe;
     vertical-align: middle;
@@ -26,7 +30,7 @@
     line-height: 1;
     text-decoration: none;
     display: block;
-    padding: 0.7rem 1rem;
+    padding: 0.7rem 0.7rem;
 }
 
 .topbar-responsive .menu a:hover {
@@ -104,6 +108,10 @@
 .menu-hover-lines a:hover::after,
 .menu-hover-lines .active a::after {
     width: 100%;
+}
+
+.main-info{
+    padding-top: 77px;
 }
 
 @media screen and (max-width: 39.9375em) {

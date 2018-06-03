@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="12b661f5-e265-4aa1-8cdd-82a2204e5843" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/foundation-6/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/foundation-6/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundation-6/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/foundation-6/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundation-6/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/foundation-6/js/app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,8 +43,8 @@
       <file leaf-file-name="app.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/foundation-6/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+            <state relative-caret-position="238">
+              <caret line="113" column="21" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -258,12 +256,12 @@
       <option name="presentableId" value="Default" />
       <updated>1527789017359</updated>
       <workItem from="1527789019098" duration="9768000" />
-      <workItem from="1528026242418" duration="2989000" />
+      <workItem from="1528026242418" duration="3452000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12757000" />
+    <option name="totallyTimeSpent" value="13220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -391,8 +389,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/foundation-6/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+        <state relative-caret-position="238">
+          <caret line="113" column="21" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
         </state>
       </provider>
     </entry>
