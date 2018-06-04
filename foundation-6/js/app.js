@@ -32,4 +32,54 @@ $(function () {
             'slow');
     });
 
+
+    function backendPost(url, data, callback) {
+        $.ajax({
+            url: API_URL + url,
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function (data) {
+                callback(null, data);
+            },
+            error: function () {
+                callback(new Error("Ajax Failed"));
+            }
+        })
+    }
+
+    var createOrder = function (order_info, callback) {
+        backendPost("/api/create-order/", order_info, callback);
+    };
+
+    function orderService(nameI, phoneI, addressI) {
+        var order = {
+            name: nameI,
+            phone: phoneI,
+            address: addressI,
+            money: totalprice
+        };
+
+        API.createOrder(order, function (err, data) {
+            if (err) {
+                alert("Order failed. Please, try again");
+            } else {
+                LiqPayCheckout.init({
+                    data: data.data,
+                    signature: data.signature,
+                    embedTo: "#liqpay",
+                    mode: "popup" // embed || popup
+                }).on("liqpay.callback", function (data) {
+                    console.log(data.status);
+                    console.log(data);
+                }).on("liqpay.ready", function (data) {
+                    // ready
+                }).on("liqpay.close", function (data) {
+                    // close
+                });
+            }
+        });
+
+    }
+
 });
